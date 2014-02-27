@@ -11,7 +11,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 
-		System.out.print("Propietario base de datos: ");
+		System.out.print("Propietario  base de datos: ");
 		Scanner sc=new Scanner(System.in);
 		String owner=sc.nextLine();
 		System.out.print("Contrasena: ");
