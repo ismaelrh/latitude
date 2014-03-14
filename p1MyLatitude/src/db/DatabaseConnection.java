@@ -3,6 +3,8 @@ package db;
 import java.sql.*;
 import java.util.Vector;
 
+import common.VectorElementos;
+
 public class DatabaseConnection {
 
 	private String db_driver;
@@ -24,6 +26,9 @@ public class DatabaseConnection {
 		}
 	}
 
+	/**
+	 * Añade un usuario con una posición a la base de datos.
+	 */
 	public void addUser(String user, common.Position position)
 			throws SQLException {
 		Connection connection = DriverManager.getConnection(db_driver,
@@ -39,6 +44,10 @@ public class DatabaseConnection {
 		connection.close();
 	}
 
+	/*
+	 * Dado un nombre de usuario, devuelve la posición de este. Si no existe en la base de datos,
+	 * lanza una excepción SQLException
+	 */
 	public common.Position getPosition(String user) throws SQLException {
 		Connection connection = DriverManager.getConnection(db_driver,
 				db_username, db_password);
@@ -92,7 +101,7 @@ public class DatabaseConnection {
 		connection.close();
 	}
 
-	public Vector<common.User> getUsers(String currentUser) throws SQLException {
+	public VectorElementos<common.User> getUsers(String currentUser) throws SQLException {
 		Connection connection = DriverManager.getConnection(db_driver,
 				db_username, db_password);
 
@@ -101,7 +110,7 @@ public class DatabaseConnection {
 		// Execute the query
 		ResultSet rs = stmt.executeQuery("SELECT * FROM users");
 
-		Vector<common.User> result = new Vector<common.User>();
+		VectorElementos<common.User> result = new VectorElementos<common.User>();
 
 		while (rs.next()) { // Automáticamente se salta el título
 
