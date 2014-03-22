@@ -1,12 +1,22 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ *
+ * @param <T>
+ * 
+ * Clase para gestionar un número <num> de elementos que implementen la 
+ * interfaz Placeable. Tiene similar comportamiento a la clase Vector <T> pero
+ * con el método add(<T>) modificado para la realización de la práctica.
+ * 
+ */
 package common;
 
 import java.util.Vector;
 
 public class VectorCercanos<T extends Placeable> extends Vector<T> implements InterfazCercanos<T> {
 
-	private T ref;
-	private int capacidad; // Capacidad maxima del vector
-	private int num; // Numero de elementos almacenados actualmente
+	private T ref;			// Elemento de referencia sobre el que se calcula la distancia
+	private int capacidad; 	// Capacidad maxima del vector
+	private int num; 		// Numero de elementos almacenados actualmente
 
 	public VectorCercanos(T ref, int capacidad) {
 		super();
@@ -29,7 +39,7 @@ public class VectorCercanos<T extends Placeable> extends Vector<T> implements In
 		// Si no, sustituyo por el mas lejano si el que introduzco es mas
 		// cercano
 		else {
-			int farestIndex = theFarest();
+			int farestIndex = theFarthest();
 			if (ref.distance(data) < ref.distance(get(farestIndex))) {
 				set(farestIndex, data);
 
@@ -41,7 +51,7 @@ public class VectorCercanos<T extends Placeable> extends Vector<T> implements In
 	}
 
 	// Devuelve el indice del mayor 
-	private int theFarest() {
+	private int theFarthest() {
 		double maxDistance = 0;
 		T theFarest = null;
 
@@ -55,5 +65,7 @@ public class VectorCercanos<T extends Placeable> extends Vector<T> implements In
 		}
 		return indexOf(theFarest);
 	}
+	
+	
 
 }

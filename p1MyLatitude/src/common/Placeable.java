@@ -1,3 +1,6 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ */
 package common;
 
 /*Esta interfaz especifica el comportamiento de un objeto "posicionable".

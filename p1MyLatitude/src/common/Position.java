@@ -1,3 +1,9 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ * 
+ * Clase que guarda la posición geográfica de una entidad.
+ */
+
 package common;
 
 public class Position {

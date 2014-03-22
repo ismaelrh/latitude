@@ -1,3 +1,6 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ */
 package common;
 
 /*Esta interfaz abstrae la funcionalidad de una colección de Placeables cercanos.

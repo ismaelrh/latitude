@@ -1,3 +1,14 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ *
+ * @param <T>
+ * 
+ * Clase para gestionar elementos que implementen la interfaz Placeable. 
+ * Similar a la clase Vector <T> pero con métodos añadidos para la realización
+ * de la práctica.
+ * 
+ */
+
 package common;
 
 import java.util.Vector;
