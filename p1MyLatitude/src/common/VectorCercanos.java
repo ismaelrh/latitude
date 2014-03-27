@@ -65,7 +65,5 @@ public class VectorCercanos<T extends Placeable> extends Vector<T> implements In
 		}
 		return indexOf(theFarest);
 	}
-	
-	
 
 }

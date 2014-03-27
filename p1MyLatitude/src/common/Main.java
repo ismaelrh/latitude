@@ -39,6 +39,8 @@ public class Main {
 			e1.printStackTrace();
 		}
 
+		User currentUser = new User (user, userpos); //Usuario de referencia para operaciones
+		
 		String dummy, dummy2;
 		VectorElementos<common.User> vdummy;
 		common.Position dummypos = new common.Position(0.0, 0.0);
@@ -69,7 +71,8 @@ public class Main {
 					for (common.User u : vdummy) {
 						System.out.println("Usuario: " + u.name.trim()
 								+ "; posicion: " + u.position.longitude
-								+ " E; " + u.position.latitude + " N");
+								+ " E; " + u.position.latitude + " N" +"; distancia: "
+								+u.distance(currentUser));
 
 					}
 
@@ -141,13 +144,20 @@ public class Main {
 				try {
 					VectorElementos<User> usuarios = datab.getUsers(user);
 					
-					InterfazCercanos<User> cercanos = new VectorCercanos<User>(
-							new User(user, userpos), n);
+					System.out.println("Tipo de Estructura de Datos a utilizar:");
+					System.out.println("\t - Vector    --> Pulse 0");
+					System.out.println("\t - Monticulo --> Pulse 1");
+					
+					InterfazCercanos<User> cercanos = 
+						InterfazCercanosFactory.interfazCercanosFactoryMethod(sc.nextInt(),
+								new User(user, userpos), n);
+					
 					usuarios.getClosest(cercanos);
 					for (common.User u : cercanos) {
 						System.out.println("Usuario: " + u.name.trim()
 								+ "; posicion: " + u.position.longitude
-								+ " E; " + u.position.latitude + " N");
+								+ " E; " + u.position.latitude + " N" + "; distancia: "
+								+u.distance(currentUser));
 
 					}
 				} catch (SQLException e1) {
