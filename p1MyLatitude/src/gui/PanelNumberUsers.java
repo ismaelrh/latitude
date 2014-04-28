@@ -21,9 +21,7 @@ public class PanelNumberUsers extends JPanel {
 	 
 	 spinner.setValue(lastUsersNumber);
 	 
-		TitledBorder titleSpinner = BorderFactory
-				.createTitledBorder("Usuarios a mostrar");
-		spinner.setBorder(titleSpinner);
+
 		this.add(spinner,BorderLayout.CENTER);
 		
 	}
