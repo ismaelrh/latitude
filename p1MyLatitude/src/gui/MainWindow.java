@@ -14,6 +14,9 @@ import common.InterfazCercanosFactory;
 import common.Position;
 import common.User;
 import common.VectorElementos;
+import exceptions.InputOutOfRangeException;
+import exceptions.NegativeUsersException;
+import exceptions.NotEnoughUsersException;
 
 import java.sql.SQLException;
 import java.text.*;
@@ -235,10 +238,20 @@ public class MainWindow extends JFrame {
 			e.printStackTrace();
 		} //Actualizamos la lista de usuarios
 		
-        cercanos =  InterfazCercanosFactory.interfazCercanosFactoryMethod(panelstructure.getStructure(),
-						new User(username, panelposition.getPosition()), panelnumberusers.getUsers());
-        usuarios.getClosest(cercanos);
-        
+        try {
+			cercanos =  InterfazCercanosFactory.interfazCercanosFactoryMethod(panelstructure.getStructure(),
+							new User(username, panelposition.getPosition()), panelnumberusers.getUsers());
+			usuarios.getClosest(cercanos);
+		} catch (NotEnoughUsersException e) {		
+			JOptionPane.showMessageDialog(this, "No hay suficiente número de usuarios en la base de datos. (Maximo "+usuarios.size()+ ")"
+					,"Datos fuera de rango",JOptionPane.ERROR_MESSAGE);
+		} catch (NegativeUsersException e) {		
+			JOptionPane.showMessageDialog(this, "No se puede buscar un número negativo de usuarios en el mapa.","Datos fuera de rango",
+				    JOptionPane.ERROR_MESSAGE);
+		}catch (InputOutOfRangeException e) {		
+			JOptionPane.showMessageDialog(this, "Numero para buscar usuarios fuera de rango.","Datos fuera de rango",
+				    JOptionPane.ERROR_MESSAGE);
+		}        
    
 	}
 }
