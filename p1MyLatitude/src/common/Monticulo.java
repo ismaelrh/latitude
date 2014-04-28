@@ -1,3 +1,9 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ * 
+ * Clase que implementa un montículo o heap para la ejecución más eficiente de la
+ * aplicación.
+ */
 package common;
 
 import java.util.PriorityQueue;

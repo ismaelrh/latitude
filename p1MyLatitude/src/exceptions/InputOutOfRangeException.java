@@ -1,10 +1,13 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ * 
+ * Excepción padre de las otras dos excepciones del package, indica que un cierto valor
+ * está fuera de rango.
+ */
 package exceptions;
 
 public class InputOutOfRangeException extends Exception {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	
 	private float outOfRange;

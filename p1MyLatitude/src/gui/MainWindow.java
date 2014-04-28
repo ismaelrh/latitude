@@ -1,3 +1,9 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ * 
+ * Clase que lanza la ventana principal de la aplicación y a partir de donde se gestiona
+ * el resto de botones y complementos dentro de ella.
+ */
 package gui;
 
 import javax.swing.*;

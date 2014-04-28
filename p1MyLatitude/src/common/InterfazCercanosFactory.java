@@ -1,3 +1,9 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ * 
+ * Clase factory que permite que se devuelva una lista o un montículo dependiendo
+ * de lo que se le pasa por el parámetro choice
+ */
 package common;
 
 public class InterfazCercanosFactory {

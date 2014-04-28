@@ -1,8 +1,11 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ * 
+ * Clase que permite la conexión a la base de datos.
+ */
 package db;
 
 import java.sql.*;
-import java.util.Vector;
-
 import common.VectorElementos;
 
 public class DatabaseConnection {

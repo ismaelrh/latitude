@@ -1,13 +1,19 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ * 
+ * Clase que representa en la parte derecha el número de usuarios que se quieren ver en 
+ * el mapa, es un cuadro con dos flechas.
+ */
 package gui;
 
 import java.awt.BorderLayout;
 import exceptions.*;
-
 import javax.swing.*;
-import javax.swing.border.TitledBorder;
 
 public class PanelNumberUsers extends JPanel {
 
+	private static final long serialVersionUID = 1L;
+	
 	int lastUsersNumber;
 	JSpinner spinner;
 	

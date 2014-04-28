@@ -1,3 +1,9 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ * 
+ * Clase que controla la ventana de texto lateral donde se muestran todos los usuarios
+ * especificados y sus coordenadas
+ */
 package gui;
 
 import java.awt.*;
@@ -10,6 +16,9 @@ import javax.swing.border.TitledBorder;
 
 public class PanelCoordinates extends JPanel{
 
+
+	private static final long serialVersionUID = 1L;
+	
 	JTextArea texto ;
 	PanelCoordinates(){
 		

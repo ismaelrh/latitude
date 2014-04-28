@@ -1,3 +1,9 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ * 
+ * Clase que sirve para ordenadr correctamente dos objetos placeables dentro
+ * del montículo.
+ */
 package common;
 
 import java.util.Comparator;

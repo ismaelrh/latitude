@@ -1,11 +1,11 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael RodrÃ­guez
  *
  * @param <T>
  * 
  * Clase para gestionar elementos que implementen la interfaz Placeable. 
- * Similar a la clase Vector <T> pero con métodos añadidos para la realización
- * de la práctica.
+ * Similar a la clase Vector <T> pero con mï¿½todos aï¿½adidos para la realizaciï¿½n
+ * de la prï¿½ctica.
  * 
  */
 

@@ -1,3 +1,9 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ * 
+ * Clase que dentro de la ventana principal representa el mapa que se muestra por
+ * pantalla.
+ */
 package gui;
 
 import java.awt.*;

@@ -1,3 +1,9 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ * 
+ * Clase que crea en la parte derecha los cuadros donde aparecen los numeros de las 
+ * coordenadas del raton.
+ */
 package gui;
 
 import java.awt.*;

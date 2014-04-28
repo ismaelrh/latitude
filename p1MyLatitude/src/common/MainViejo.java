@@ -1,3 +1,9 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ * 
+ * Clase Main que ejecuta el programa de forma textual, paso previo para la aplicación
+ * gráfica
+ */
 package common;
 
 import java.sql.SQLException;
@@ -12,9 +18,9 @@ public class MainViejo {
 
 		System.out.print("Propietario  base de datos: ");
 		Scanner sc = new Scanner(System.in);
-		String owner =  "A587429";
+		String owner =  "";
 		System.out.print("Contrasena: ");
-		String password = "fresaEL123";
+		String password = "";
 
 		db.DatabaseConnection datab = new db.DatabaseConnection(
 				"jdbc:oracle:thin:@hendrix-oracle.cps.unizar.es:1521:vicious",

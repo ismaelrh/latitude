@@ -1,3 +1,9 @@
+/**
+ * @author Pablo Lanaspa e Ismael Rodríguez
+ * 
+ * Clase que va indicando en la parte derecha de la aplicación la posición en coordenadas
+ * por donde se va pasando el ratón en el mapa.
+ */
 package gui;
 
 import java.awt.*;
