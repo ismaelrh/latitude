@@ -7,20 +7,13 @@ public class InputOutOfRangeException extends Exception {
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	private float maxRange;
-	private float minRange;
+	private float outOfRange;
 	
-	public InputOutOfRangeException(float min, float max){
-		minRange = min;
-		maxRange = max;
+	public InputOutOfRangeException(float outOfRange){
+		this.outOfRange= outOfRange;
 	}
 	
-	public float getMaxRange() {
-		return maxRange;
+	public float getOutOfRange() {
+		return outOfRange;
 	}
-
-	public float getMinRange() {
-		return minRange;
-	}
-	
 }
