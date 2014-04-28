@@ -1,7 +1,7 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodrï¿½guez
  * 
- * Clase Main que ejecuta toda la aplicación y que pide credenciales en forma de ventanas
+ * Clase Main que ejecuta toda la aplicaciï¿½n y que pide credenciales en forma de ventanas
  */
 package common;
 
@@ -14,12 +14,16 @@ public class Main {
 	/**
 	 * @param args
 	 */
+	
+	
+	
+	
 	public static void main(String[] args) {
        try {
     	     String usuario =  (String)JOptionPane.showInputDialog(null,
     	    			"Nombre de usuario base de datos:","DB Login",JOptionPane.PLAIN_MESSAGE);
     	     JPasswordField jpf =  new JPasswordField();
-    	     JLabel titulo = new JLabel ("Contrasena base de datos:");
+    	     JLabel titulo = new JLabel ("Contrasena base de datos :");
     	    JOptionPane.showConfirmDialog (null, new Object[]{titulo, jpf}, "DB contrasena", JOptionPane.PLAIN_MESSAGE);
     	    char p[] = jpf.getPassword();
     	     String pass = new String(p);
