@@ -1,12 +1,6 @@
 package gui;
 
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JSpinner;
-import javax.swing.JTextArea;
+import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -42,7 +36,7 @@ public class MainWindow extends JFrame {
 	PanelCursor panelcursor;
 	PanelNumberUsers panelnumberusers;
 	PanelCoordinates panelcoordinates;
-	
+	PanelStructure panelstructure;
 	db.DatabaseConnection database;
 
 	String username;
@@ -55,7 +49,7 @@ public class MainWindow extends JFrame {
 		panelcursor = new PanelCursor();
 		panelcoordinates = new PanelCoordinates();
 		 panelnumberusers = new PanelNumberUsers();
-		
+		panelstructure = new PanelStructure();
 	}
 
 	public void start() throws SQLException {
@@ -114,7 +108,12 @@ public class MainWindow extends JFrame {
 				.createTitledBorder("Coordenadas locales");
 		panelposition.setBorder(titleCoordenadas);
 
+
+		TitledBorder titleSpinner = BorderFactory
+				.createTitledBorder("Usuarios a mostrar");
+		panelnumberusers.setBorder(titleSpinner);
 		data.add(panelnumberusers);
+		
 		//Añadimos el panel panelCoordinates
 		data.add(panelcoordinates);
 		
@@ -123,12 +122,17 @@ public class MainWindow extends JFrame {
 		JButton btnUpdate = new JButton("Actualizar");
 		data.add(btnUpdate);
 				
+		TitledBorder titlestructure= BorderFactory.createTitledBorder("Estructura");
+		panelstructure.setBorder(titlestructure);
+		data.add(panelstructure);
+		
 		/* Añadimos panelcursor al frame data */
 		data.add(panelcursor);	
 		TitledBorder titleCursor = BorderFactory
 				.createTitledBorder("Coordenadas del cursor");
 		panelcursor.setBorder(titleCursor);
 
+		
 		
 		
 	
@@ -231,7 +235,7 @@ public class MainWindow extends JFrame {
 			e.printStackTrace();
 		} //Actualizamos la lista de usuarios
 		
-        cercanos =  InterfazCercanosFactory.interfazCercanosFactoryMethod(0,
+        cercanos =  InterfazCercanosFactory.interfazCercanosFactoryMethod(panelstructure.getStructure(),
 						new User(username, panelposition.getPosition()), panelnumberusers.getUsers());
         usuarios.getClosest(cercanos);
         
