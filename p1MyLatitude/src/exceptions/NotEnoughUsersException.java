@@ -1,8 +1,8 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  * 
- * Excepción que indica que se ha superado el número máximo de usuarios a introducir en
- * algún lugar.
+ * Excepcion que indica que se ha superado el numero maximo de usuarios a introducir en
+ * algun lugar.
  */
 package exceptions;
 

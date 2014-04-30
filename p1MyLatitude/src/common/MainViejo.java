@@ -1,8 +1,8 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  * 
- * Clase Main que ejecuta el programa de forma textual, paso previo para la aplicación
- * gráfica
+ * Clase Main que ejecuta el programa de forma textual, paso previo para la aplicacion
+ * grï¿½fica
  */
 package common;
 

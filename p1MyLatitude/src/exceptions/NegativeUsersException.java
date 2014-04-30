@@ -1,7 +1,7 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  * 
- * Excepción que indica que se ha introducido un número negativo de usuarios.
+ * Excepcion que indica que se ha introducido un numero negativo de usuarios.
  */
 package exceptions;
 

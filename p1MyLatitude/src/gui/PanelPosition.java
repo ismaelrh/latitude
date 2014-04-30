@@ -1,5 +1,5 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  * 
  * Clase que crea en la parte derecha los cuadros donde aparecen los numeros de las 
  * coordenadas del raton.

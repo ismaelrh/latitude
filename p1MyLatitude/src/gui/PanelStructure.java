@@ -1,8 +1,8 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodrï¿½guez
  * 
  * Clase que crea el cuadro desplegable en la parte derecha de la ventana para poder
- * elegir entre dos estructuras de datos diferentes a la hora de utilizar la información.
+ * elegir entre dos estructuras de datos diferentes a la hora de utilizar la informacion.
  */
 package gui;
 
@@ -14,14 +14,14 @@ public class PanelStructure extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 	
-	JComboBox desplegable;
+	JComboBox<String> desplegable;
 	PanelStructure(){
 		
 		BorderLayout layout= new BorderLayout();
 		this.setLayout(layout);
 		
 		String[] contenido = {"Vector","MontÃ­culo"};
-		desplegable = new JComboBox(contenido);
+		desplegable = new JComboBox<String>(contenido);
 		
 		
 		this.add(desplegable,BorderLayout.CENTER);

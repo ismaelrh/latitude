@@ -1,5 +1,5 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  * 
  * Clase que representa a los usuario del sistema. Todos ellos implementan la interfaz
  * Placeable para que puedan ser localizados.
@@ -9,7 +9,7 @@ package common;
 
 public class User implements Placeable {
 	public String name; 		//Guarda el nombre del usuario
-	public Position position;	//Contiene su posición geográfica
+	public Position position;	//Contiene su posiciï¿½n geogrï¿½fica
 
 	public User(String n, Position p) {
 		name = n;

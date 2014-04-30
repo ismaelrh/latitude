@@ -1,5 +1,5 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  * 
  * Clase que controla la ventana de texto lateral donde se muestran todos los usuarios
  * especificados y sus coordenadas

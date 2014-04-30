@@ -1,8 +1,8 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  * 
- * Excepción padre de las otras dos excepciones del package, indica que un cierto valor
- * está fuera de rango.
+ * Excepcion padre de las otras dos excepciones del package, indica que un cierto valor
+ * esta fuera de rango.
  */
 package exceptions;
 

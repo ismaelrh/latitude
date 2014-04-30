@@ -1,7 +1,7 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  * 
- * Clase que representa en la parte derecha el número de usuarios que se quieren ver en 
+ * Clase que representa en la parte derecha el numero de usuarios que se quieren ver en 
  * el mapa, es un cuadro con dos flechas.
  */
 package gui;

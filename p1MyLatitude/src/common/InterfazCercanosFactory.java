@@ -1,8 +1,8 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  * 
- * Clase factory que permite que se devuelva una lista o un montículo dependiendo
- * de lo que se le pasa por el parámetro choice
+ * Clase factory que permite que se devuelva una lista o un montï¿½culo dependiendo
+ * de lo que se le pasa por el parametro choice
  */
 package common;
 

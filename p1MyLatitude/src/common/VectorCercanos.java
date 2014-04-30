@@ -1,13 +1,14 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  *
  * @param <T>
  * 
- * Clase para gestionar un número <num> de elementos que implementen la 
+ * Clase para gestionar un numero <num> de elementos que implementen la 
  * interfaz Placeable. Tiene similar comportamiento a la clase Vector <T> pero
- * con el método add(<T>) modificado para la realización de la práctica.
+ * con el metodo add(<T>) modificado para la realizaciï¿½n de la prï¿½ctica.
  * 
  */
+
 package common;
 
 import java.util.Vector;

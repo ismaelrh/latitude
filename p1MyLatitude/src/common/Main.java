@@ -1,7 +1,7 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodr�guez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  * 
- * Clase Main que ejecuta toda la aplicaci�n y que pide credenciales en forma de ventanas
+ * Clase Main que ejecuta toda la aplicacion y que pide credenciales en forma de ventanas
  */
 package common;
 

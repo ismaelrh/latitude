@@ -1,8 +1,8 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  * 
  * Clase que sirve para ordenadr correctamente dos objetos placeables dentro
- * del montículo.
+ * del monticulo.
  */
 package common;
 

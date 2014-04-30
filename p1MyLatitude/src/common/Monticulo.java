@@ -1,8 +1,8 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  * 
- * Clase que implementa un montículo o heap para la ejecución más eficiente de la
- * aplicación.
+ * Clase que implementa un monticulo o heap para la ejecucion mas eficiente de la
+ * aplicacion.
  */
 package common;
 
@@ -29,7 +29,7 @@ public class Monticulo <T extends Placeable> extends PriorityQueue <T>
 		}
 		else{
 			if (this.comparator().compare(e, this.element()) > 0){
-				//Lo añade
+				//Lo anade
 				this.remove();
 				return super.add(e);
 			}

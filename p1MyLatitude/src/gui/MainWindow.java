@@ -1,7 +1,7 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  * 
- * Clase que lanza la ventana principal de la aplicación y a partir de donde se gestiona
+ * Clase que lanza la ventana principal de la aplicacion y a partir de donde se gestiona
  * el resto de botones y complementos dentro de ella.
  */
 package gui;
@@ -13,13 +13,10 @@ import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.*;
 
-import javax.swing.*;
 
-import common.InterfazCercanos;
 import common.InterfazCercanosFactory;
 import common.Position;
 import common.User;
-import common.VectorElementos;
 import exceptions.InputOutOfRangeException;
 import exceptions.NegativeUsersException;
 import exceptions.NotEnoughUsersException;
@@ -238,7 +235,7 @@ public class MainWindow extends JFrame {
 	public void updateListas(){
 		try {
 			usuarios = database.getUsers(username);
-			System.out.println(username);
+			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -249,10 +246,10 @@ public class MainWindow extends JFrame {
 							new User(username, panelposition.getPosition()), panelnumberusers.getUsers());
 			usuarios.getClosest(cercanos);
 		} catch (NotEnoughUsersException e) {		
-			JOptionPane.showMessageDialog(this, "No hay suficiente número de usuarios en la base de datos. (Maximo "+usuarios.size()+ ")"
+			JOptionPane.showMessageDialog(this, "No hay suficiente nï¿½mero de usuarios en la base de datos. (Maximo "+usuarios.size()+ ")"
 					,"Datos fuera de rango",JOptionPane.ERROR_MESSAGE);
 		} catch (NegativeUsersException e) {		
-			JOptionPane.showMessageDialog(this, "No se puede buscar un número negativo de usuarios en el mapa.","Datos fuera de rango",
+			JOptionPane.showMessageDialog(this, "No se puede buscar un nï¿½mero negativo de usuarios en el mapa.","Datos fuera de rango",
 				    JOptionPane.ERROR_MESSAGE);
 		}catch (InputOutOfRangeException e) {		
 			JOptionPane.showMessageDialog(this, "Numero para buscar usuarios fuera de rango.","Datos fuera de rango",

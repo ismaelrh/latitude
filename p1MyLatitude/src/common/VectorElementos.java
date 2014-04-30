@@ -4,8 +4,8 @@
  * @param <T>
  * 
  * Clase para gestionar elementos que implementen la interfaz Placeable. 
- * Similar a la clase Vector <T> pero con m�todos a�adidos para la realizaci�n
- * de la pr�ctica.
+ * Similar a la clase Vector <T> pero con metodos anadidos para la realizacion
+ * de la practica.
  * 
  */
 

@@ -1,7 +1,7 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodr�guez
+ * @author Pablo Lanaspa e Ismael Rodríguez
  * 
- * Clase que permite la conexi�n a la base de datos.
+ * Clase que permite la conexión a la base de datos.
  */
 package db;
 
@@ -30,7 +30,7 @@ public class DatabaseConnection {
 	}
 
 	/**
-	 * Añade un usuario con una posición a la base de datos.
+	 * AÃ±ade un usuario con una posiciÃ³n a la base de datos.
 	 */
 	public void addUser(String user, common.Position position)
 			throws SQLException {
@@ -48,8 +48,8 @@ public class DatabaseConnection {
 	}
 
 	/*
-	 * Dado un nombre de usuario, devuelve la posición de este. Si no existe en la base de datos,
-	 * lanza una excepción SQLException
+	 * Dado un nombre de usuario, devuelve la posiciÃ³n de este. Si no existe en la base de datos,
+	 * lanza una excepciÃ³n SQLException
 	 */
 	public common.Position getPosition(String user) throws SQLException {
 		Connection connection = DriverManager.getConnection(db_driver,
@@ -115,7 +115,7 @@ public class DatabaseConnection {
 
 		VectorElementos<common.User> result = new VectorElementos<common.User>();
 
-		while (rs.next()) { // Automáticamente se salta el título
+		while (rs.next()) { // AutomÃ¡ticamente se salta el tÃ­tulo
 
 			String nombre = rs.getString("Nombre");
 			if (!nombre.trim().equalsIgnoreCase(currentUser)) {

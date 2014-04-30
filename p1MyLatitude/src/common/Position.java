@@ -1,7 +1,7 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  * 
- * Clase que guarda la posición geográfica de una entidad.
+ * Clase que guarda la posicion geografica de una entidad.
  */
 
 package common;

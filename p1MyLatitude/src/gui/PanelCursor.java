@@ -1,8 +1,8 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  * 
- * Clase que va indicando en la parte derecha de la aplicación la posición en coordenadas
- * por donde se va pasando el ratón en el mapa.
+ * Clase que va indicando en la parte derecha de la aplicacion la posicion en coordenadas
+ * por donde se va pasando el raton en el mapa.
  */
 package gui;
 

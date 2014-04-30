@@ -1,5 +1,5 @@
 /**
- * @author Pablo Lanaspa e Ismael Rodríguez
+ * @author Pablo Lanaspa e Ismael Rodriguez
  * 
  * Clase que dentro de la ventana principal representa el mapa que se muestra por
  * pantalla.
